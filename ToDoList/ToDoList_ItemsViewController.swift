@@ -17,10 +17,25 @@ class ToDoList_ItemsViewController: UIViewController {
         super.viewDidLoad()
         self.TableView.dataSource = self;
         self.TableView.delegate = self;
-
         
+    // navigation bar button
+       navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "add_icon")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), style: .done, target: nil, action: #selector(addNewToList))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "edit_icon")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), style: .done, target: nil, action: #selector(editExistingList))
+    
+       
+      
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func addNewToList()
+    {
+        print("add clicked");
+    }
+    @objc func editExistingList()
+    {
+        print("edit clicked");
     }
     
 
