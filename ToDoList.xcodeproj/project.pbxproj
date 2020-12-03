@@ -14,7 +14,7 @@
 		A1622BC42577662C003E6611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1622BC22577662C003E6611 /* LaunchScreen.storyboard */; };
 		A1622BD52577FEE2003E6611 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BD42577FEE2003E6611 /* CustomTableViewCell.swift */; };
 		A1622BD82577FF56003E6611 /* ToDoList_ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BD72577FF56003E6611 /* ToDoList_ItemsViewController.swift */; };
-		A1622BDD2578BD95003E6611 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BDC2578BD95003E6611 /* DetailListViewController.swift */; };
+		A1622BE62579718A003E6611 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BE52579718A003E6611 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		A1622BC52577662C003E6611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1622BD42577FEE2003E6611 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A1622BD72577FF56003E6611 /* ToDoList_ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_ItemsViewController.swift; sourceTree = "<group>"; };
-		A1622BDC2578BD95003E6611 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		A1622BE52579718A003E6611 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,6 @@
 		A1622BAB25776629003E6611 = {
 			isa = PBXGroup;
 			children = (
-				A1622BDC2578BD95003E6611 /* DetailListViewController.swift */,
 				A1622BB625776629003E6611 /* ToDoList */,
 				A1622BB525776629003E6611 /* Products */,
 			);
@@ -69,6 +68,7 @@
 				A1622BC52577662C003E6611 /* Info.plist */,
 				A1622BD42577FEE2003E6611 /* CustomTableViewCell.swift */,
 				A1622BD72577FF56003E6611 /* ToDoList_ItemsViewController.swift */,
+				A1622BE52579718A003E6611 /* TaskViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1622BB825776629003E6611 /* AppDelegate.swift in Sources */,
-				A1622BDD2578BD95003E6611 /* DetailListViewController.swift in Sources */,
 				A1622BD52577FEE2003E6611 /* CustomTableViewCell.swift in Sources */,
+				A1622BE62579718A003E6611 /* TaskViewController.swift in Sources */,
 				A1622BD82577FF56003E6611 /* ToDoList_ItemsViewController.swift in Sources */,
 				A1622BBA25776629003E6611 /* SceneDelegate.swift in Sources */,
 			);
