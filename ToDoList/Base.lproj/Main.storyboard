@@ -81,59 +81,11 @@
             <objects>
                 <viewController id="GXO-Q2-y1L" customClass="DetailListViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lzm-AW-5Cj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ml-k5-IOL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1112"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1i-cG-c6Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1112"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsE-Gt-R5K">
-                                                <rect key="frame" x="186" y="29" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puS-x1-zRV">
-                                                <rect key="frame" x="186" y="1083" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="puS-x1-zRV" secondAttribute="trailing" constant="186" id="JJT-39-khl"/>
-                                            <constraint firstItem="HsE-Gt-R5K" firstAttribute="leading" secondItem="L1i-cG-c6Z" secondAttribute="leading" constant="186" id="K2G-X3-e70"/>
-                                            <constraint firstAttribute="height" constant="1112" id="TAr-ur-ATX"/>
-                                            <constraint firstAttribute="trailing" secondItem="HsE-Gt-R5K" secondAttribute="trailing" constant="186" id="a55-2e-V06"/>
-                                            <constraint firstItem="puS-x1-zRV" firstAttribute="leading" secondItem="L1i-cG-c6Z" secondAttribute="leading" constant="186" id="hWJ-O5-gVo"/>
-                                            <constraint firstAttribute="bottom" secondItem="puS-x1-zRV" secondAttribute="bottom" constant="8" id="iK1-5t-JSO"/>
-                                            <constraint firstItem="HsE-Gt-R5K" firstAttribute="top" secondItem="L1i-cG-c6Z" secondAttribute="top" constant="29" id="rQE-cA-zzf"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="L1i-cG-c6Z" secondAttribute="trailing" id="5AK-PS-bRh"/>
-                                    <constraint firstItem="L1i-cG-c6Z" firstAttribute="leading" secondItem="9Ml-k5-IOL" secondAttribute="leading" id="8Jf-iW-PbA"/>
-                                    <constraint firstAttribute="bottom" secondItem="L1i-cG-c6Z" secondAttribute="bottom" id="pSY-ae-G5k"/>
-                                    <constraint firstItem="L1i-cG-c6Z" firstAttribute="top" secondItem="9Ml-k5-IOL" secondAttribute="top" id="te8-GS-VYR"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Mpl-2o-itY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Mpl-2o-itY" firstAttribute="trailing" secondItem="9Ml-k5-IOL" secondAttribute="trailing" id="2v4-cw-eiV"/>
-                            <constraint firstItem="Mpl-2o-itY" firstAttribute="bottom" secondItem="9Ml-k5-IOL" secondAttribute="bottom" id="aag-Nk-nI3"/>
-                            <constraint firstItem="L1i-cG-c6Z" firstAttribute="width" secondItem="lzm-AW-5Cj" secondAttribute="width" id="khh-ee-Pkv"/>
-                            <constraint firstItem="9Ml-k5-IOL" firstAttribute="leading" secondItem="Mpl-2o-itY" secondAttribute="leading" id="lFX-jF-0ql"/>
-                            <constraint firstItem="9Ml-k5-IOL" firstAttribute="top" secondItem="Mpl-2o-itY" secondAttribute="top" id="nnG-WO-9vF"/>
-                        </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgF-m1-Tsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
