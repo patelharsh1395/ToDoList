@@ -35,7 +35,7 @@ class ToDoList_ItemsViewController: UIViewController {
     }
     @objc func editExistingList()
     {
-        print("edit clicked");
+        performSegue(withIdentifier: "SegueToDetailView", sender: nil);
     }
     
 
