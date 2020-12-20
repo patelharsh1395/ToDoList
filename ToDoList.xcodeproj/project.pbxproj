@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12FC3D8258AA9810017CD2D /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12FC3D7258AA9810017CD2D /* Realm.xcframework */; };
+		A12FC3D9258AA9810017CD2D /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A12FC3D7258AA9810017CD2D /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A12FC3DB258AA9890017CD2D /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12FC3D2258AA8EE0017CD2D /* RealmSwift.xcframework */; };
+		A12FC3DC258AA9890017CD2D /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A12FC3D2258AA8EE0017CD2D /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A12FC3E0258AAC700017CD2D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FC3DF258AAC700017CD2D /* DataModel.swift */; };
 		A1622BB825776629003E6611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BB725776629003E6611 /* AppDelegate.swift */; };
 		A1622BBA25776629003E6611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BB925776629003E6611 /* SceneDelegate.swift */; };
 		A1622BBF25776629003E6611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1622BBD25776629003E6611 /* Main.storyboard */; };
@@ -17,7 +22,25 @@
 		A1622BE62579718A003E6611 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1622BE52579718A003E6611 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A12FC3DA258AA9810017CD2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A12FC3D9258AA9810017CD2D /* Realm.xcframework in Embed Frameworks */,
+				A12FC3DC258AA9890017CD2D /* RealmSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A12FC3D2258AA8EE0017CD2D /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = ToDoList/Assets.xcassets/12.2/RealmSwift.xcframework; sourceTree = "<group>"; };
+		A12FC3D7258AA9810017CD2D /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = ToDoList/Assets.xcassets/12.2/Realm.xcframework; sourceTree = "<group>"; };
+		A12FC3DF258AAC700017CD2D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A1622BB425776629003E6611 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1622BB725776629003E6611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1622BB925776629003E6611 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +58,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12FC3D8258AA9810017CD2D /* Realm.xcframework in Frameworks */,
+				A12FC3DB258AA9890017CD2D /* RealmSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12FC3D1258AA8EE0017CD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12FC3D7258AA9810017CD2D /* Realm.xcframework */,
+				A12FC3D2258AA8EE0017CD2D /* RealmSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1622BAB25776629003E6611 = {
 			isa = PBXGroup;
 			children = (
 				A1622BB625776629003E6611 /* ToDoList */,
 				A1622BB525776629003E6611 /* Products */,
+				A12FC3D1258AA8EE0017CD2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +104,7 @@
 				A1622BD42577FEE2003E6611 /* CustomTableViewCell.swift */,
 				A1622BD72577FF56003E6611 /* ToDoList_ItemsViewController.swift */,
 				A1622BE52579718A003E6611 /* TaskViewController.swift */,
+				A12FC3DF258AAC700017CD2D /* DataModel.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -83,6 +119,7 @@
 				A1622BB025776629003E6611 /* Sources */,
 				A1622BB125776629003E6611 /* Frameworks */,
 				A1622BB225776629003E6611 /* Resources */,
+				A12FC3DA258AA9810017CD2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +185,7 @@
 				A1622BE62579718A003E6611 /* TaskViewController.swift in Sources */,
 				A1622BD82577FF56003E6611 /* ToDoList_ItemsViewController.swift in Sources */,
 				A1622BBA25776629003E6611 /* SceneDelegate.swift in Sources */,
+				A12FC3E0258AAC700017CD2D /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 89T3R577CZ;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 89T3R577CZ;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
